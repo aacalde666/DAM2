@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pedidos>
+	<pedido>
+        <cliente id="123">
+            <nombre>Juan</nombre>
+            <nif>2222</nif>
+        </cliente>
+        <producto>
+            <descripcion>Rotus</descripcion>
+            <precio>20</precio>
+            <cantidad>50</cantidad>
+        </producto>
+        <producto>
+            <descripcion>Bolis</descripcion>
+            <precio>30</precio>
+            <cantidad>50</cantidad>
+        </producto>
+    </pedido>
+    <pedido>
+        <cliente>
+            <nombre>Juan</nombre>
+            <nif>4444</nif> 
+        </cliente>
+        <producto>
+            <descripcion>gomas</descripcion>
+            <precio>45</precio>
+            <cantidad>23</cantidad>
+        </producto>
+    </pedido>
+    <pedido>
+        <cliente>
+            <nombre>Juan</nombre>
+            <nif>2222</nif>
+        </cliente>
+        <producto>
+            <descripcion>Rotus</descripcion>
+            <precio>20</precio>
+            <cantidad>50</cantidad>
+        </producto>
+        <producto>
+            <descripcion>Bolis</descripcion>
+            <precio>30</precio>
+            <cantidad>50</cantidad>
+        </producto>
+    </pedido>
+    <pedido>
+        <cliente>
+            <nombre>Pepe</nombre>
+            <nif>5555</nif> 
+        </cliente>
+        <producto>
+            <descripcion>gomas</descripcion>
+            <precio>45</precio>
+            <cantidad>23</cantidad>
+        </producto>
+    </pedido>
+</pedidos>

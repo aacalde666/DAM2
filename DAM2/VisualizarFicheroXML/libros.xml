@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<libros>
+    <libro>
+        <titulo>Bla</titulo>
+        <autores>
+            <autor>Luis</autor>
+            <autor>Javier</autor>
+        </autores>
+    </libro>
+    <libro>
+        <titulo>Bla2</titulo>
+        <autores>
+            <autor>Luis</autor>
+            <autor>Javier</autor>
+        </autores>
+    </libro>
+</libros>

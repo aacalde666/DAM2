@@ -1,0 +1,4 @@
+2024-10-07 10:07:44,262 DEBUG l.Main [main] Mensaje de depuracion de Main
+2024-10-07 10:07:44,264 INFO l.Main [main] Entrando en la aplicación
+2024-10-07 10:07:44,264 ERROR l.Main [main] Ha ocurrido un error en Main
+2024-10-07 10:07:44,265 ERROR u.utilidades [main] Error

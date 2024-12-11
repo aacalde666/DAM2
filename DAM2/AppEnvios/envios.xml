@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shiporders>
+    <shiporder orderid="123">
+        <orderperson>juanjo</orderperson>
+        <shipto>
+            <name>manolo</name>
+            <address>plaza castilla</address>
+            <city>madrid</city>
+            <country>españa</country>
+        </shipto>
+        <item>
+            <title>boli</title>
+            <note>azul</note>
+            <quantity>300</quantity>
+            <price>1.0</price>
+        </item>
+        <item>
+            <title>boli</title>
+            <note>rojo</note>
+            <quantity>300</quantity>
+            <price>1.0</price>
+        </item>
+    </shiporder>
+    <shiporder orderid="55">
+        <orderperson>miguel</orderperson>
+        <shipto>
+            <name>michael</name>
+            <address>arturo soria 335</address>
+            <city>madrid</city>
+            <country>españa</country>
+        </shipto>
+        <item>
+            <title>pantalla</title>
+            <note>plana</note>
+            <quantity>200</quantity>
+            <price>300.0</price>
+        </item>
+        <item>
+            <title>pantalla</title>
+            <note>escritorio</note>
+            <quantity>500</quantity>
+            <price>299.99</price>
+        </item>
+        <item>
+            <title>pc</title>
+            <note>torre gaming</note>
+            <quantity>40</quantity>
+            <price>1250.5</price>
+        </item>
+    </shiporder>
+</shiporders>

@@ -1,0 +1,3 @@
+nomfichero = ./src/main/java/_Fichero_equipos/equipos.dat
+NuevaCarpeta = ./src/main/java/_Fichero_equipos
+ficheroTemporal =./src/main/java/_Fichero_equipos/temp.dat

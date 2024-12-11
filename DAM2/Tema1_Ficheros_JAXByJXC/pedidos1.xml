@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pedidos>
+    <pedido>
+        <cliente id="1">
+            <nombre>gh</nombre>
+            <nif>1234</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descripcion>fdhgf</descripcion>
+                <precio>654.0</precio>
+                <cantidad>435</cantidad>
+            </producto>
+            <producto>
+                <descripcion>gfdghjf</descripcion>
+                <precio>43.0</precio>
+                <cantidad>1</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+    <pedido>
+        <cliente id="2">
+            <nombre>fdghkf</nombre>
+            <nif>4465</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descripcion>hjrj</descripcion>
+                <precio>2443.0</precio>
+                <cantidad>1</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+    <pedido>
+        <cliente id="3">
+            <nombre>hrgh</nombre>
+            <nif>5756</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descripcion>adggsdg</descripcion>
+                <precio>5755.0</precio>
+                <cantidad>4</cantidad>
+            </producto>
+            <producto>
+                <descripcion>fhjrt</descripcion>
+                <precio>42.0</precio>
+                <cantidad>5</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+    <pedido>
+        <cliente id="4">
+            <nombre>ghj</nombre>
+            <nif>9786</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descripcion>jfgh</descripcion>
+                <precio>4.0</precio>
+                <cantidad>1</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+</pedidos>

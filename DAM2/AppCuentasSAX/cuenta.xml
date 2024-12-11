@@ -1,0 +1,18 @@
+<cuentas>
+	<cuenta>
+		<idCuenta>1</idCuenta>
+		<titulares>
+			<nombreTitular>Manolo</nombreTitular >
+			<nombreTitular>Juan Carlos</nombreTitular >
+		</titulares>
+		<cantidad>152</cantidad>
+	</cuenta>
+	<cuenta>
+		<idCuenta>2</idCuenta>
+		<titulares>
+			<nombreTitular>Mondongo</nombreTitular >
+			<nombreTitular>Carlos</nombreTitular >
+		</titulares>
+		<cantidad>325</cantidad>
+	</cuenta>
+</cuentas>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pedidos>
+    <pedido>
+        <cliente>
+            <nombre>t</nombre>
+            <nif>7</nif>
+        </cliente>
+        <producto>
+            <descripcion>e</descripcion>
+            <precio>3.0</precio>
+            <cantidad>1</cantidad>
+        </producto>
+    </pedido>
+    <pedido>
+        <cliente>
+            <nombre>r</nombre>
+            <nif>7</nif>
+        </cliente>
+        <producto>
+            <descripcion>i</descripcion>
+            <precio>8.0</precio>
+            <cantidad>9</cantidad>
+        </producto>
+    </pedido>
+</pedidos>

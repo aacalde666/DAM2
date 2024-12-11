@@ -1,0 +1,13 @@
+[{"titulo":"Acceso a Datos",
+"autores" : ["Pepito", "Juanito"],
+"stock" : 18 },
+{ "titulo" : "Interfaces",
+"autores" : ["Maria", "Jhon"],
+"stock" : 35 },
+{ "titulo" : "Empresa",
+"autores" : ["Pepito", "Jhon"],
+"stock" : 43 },
+{ "titulo" : "Ingles",
+"autores" : ["Maria", "Juanito"],
+"stock" : 10 }
+]

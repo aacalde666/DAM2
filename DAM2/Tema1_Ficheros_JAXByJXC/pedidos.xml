@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pedidos>
+    <pedido>
+        <cliente id="15">
+            <nombre>fgdh</nombre>
+            <nif>4564</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descripcion>fdgh</descripcion>
+                <precio>3453.0</precio>
+                <cantidad>2435</cantidad>
+            </producto>
+            <producto>
+                <descripcion>jyjhg</descripcion>
+                <precio>553.0</precio>
+                <cantidad>2</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+    <pedido>
+        <cliente id="45">
+            <nombre>hjfg</nombre>
+            <nif>3563</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descripcion>hjfjfh</descripcion>
+                <precio>313.0</precio>
+                <cantidad>1</cantidad>
+            </producto>
+            <producto>
+                <descripcion>hjkhj</descripcion>
+                <precio>78.0</precio>
+                <cantidad>34</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+</pedidos>

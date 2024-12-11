@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<libros>
+    <libros>
+        <titulo>Acceso a Datos</titulo>
+        <autores>
+            <nombre>Pepito</nombre>
+            <nombre>Juanito</nombre>
+        </autores>
+        <stock>18</stock>
+    </libros>
+    <libros>
+        <titulo>Empresa</titulo>
+        <autores>
+            <nombre>Pepito</nombre>
+            <nombre>Jhon</nombre>
+        </autores>
+        <stock>43</stock>
+    </libros>
+</libros>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<matriculas>
+    <matricula>
+        <alumno>alma</alumno>
+        <asignaturas>
+            <asignatura>
+                <precio>324.0</precio>
+                <nombre>matematicas</nombre>
+            </asignatura>
+            <asignatura>
+                <precio>875.0</precio>
+                <nombre>lengua</nombre>
+            </asignatura>
+        </asignaturas>
+    </matricula>
+    <matricula>
+        <alumno>miguel</alumno>
+        <asignaturas>
+            <asignatura>
+                <precio>543.0</precio>
+                <nombre>historia</nombre>
+            </asignatura>
+            <asignatura>
+                <precio>9875.0</precio>
+                <nombre>lengua</nombre>
+            </asignatura>
+        </asignaturas>
+    </matricula>
+    <matricula>
+        <alumno>alex</alumno>
+        <asignaturas>
+            <asignatura>
+                <precio>654.0</precio>
+                <nombre>historia</nombre>
+            </asignatura>
+            <asignatura>
+                <precio>1242.0</precio>
+                <nombre>matematicas</nombre>
+            </asignatura>
+        </asignaturas>
+    </matricula>
+</matriculas>

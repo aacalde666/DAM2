@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pedidos>
+    <pedido>
+        <cliente id="23">
+            <nombre>Julia</nombre>
+            <nif>1224</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descripcion>ordenador</descripcion>
+                <precio>1000.0</precio>
+                <cantidad>3</cantidad>
+            </producto>
+            <producto>
+                <descripcion>pantalla</descripcion>
+                <precio>10000.0</precio>
+                <cantidad>5</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+</pedidos>
