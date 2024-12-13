@@ -15,17 +15,19 @@ public class Server {
 			InetSocketAddress addr = new InetSocketAddress("localhost", 9999);
 			ss.bind(addr);
 			System.out.println("accept");
-			Socket nsc = ss.accept();
-			System. out.println ("conexión recibida");
-			InputStream is = nsc.getInputStream();
-			OutputStream os = nsc. getOutputStream();
-			byte[] mensaje = new byte [25];
-			is.read (mensaje);
-			System.out.println("recibido:" + new String (mensaje));
-			System. out.println ("closet");
-			nsc.close();
-			ss.close();
-			System.out.println("Terminado");
+			while (true) {
+				Socket nsc = ss.accept();
+				System. out.println ("conexión recibida");
+				InputStream is = nsc.getInputStream();
+				OutputStream os = nsc. getOutputStream();
+				byte[] mensaje = new byte [25];
+				is.read (mensaje);
+				System.out.println("recibido:" + new String (mensaje));
+				System. out.println ("closet");
+				nsc.close();
+				ss.close();
+				System.out.println("Terminado");
+			}
 		} catch (IOException e) {
 			e.printStackTrace ();
 		}
