@@ -5,7 +5,7 @@ import java.net.*;
 import java.nio.file.*;
 
 public class Cliente {
-    private static final String CARPETA_CLIENTE = "./src/cliente/";
+    private static final String CARPETA_CLIENTE = "./src/cliente/Descktop/";
 
     public static void main(String[] args) {
         String host = "localhost";

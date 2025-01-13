@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Servidor {
     private static int contadorConexiones = 0;
-    private static final String CARPETA_SERVIDOR = "./src/servidor/";
+    private static final String CARPETA_SERVIDOR = "./src/servidor/DataBase";
 
     public static void main(String[] args) {
         int puerto = 12345;
@@ -34,7 +34,7 @@ public class Servidor {
              PrintWriter salida = new PrintWriter(clienteSocket.getOutputStream(), true)) {
 
             salida.println("Conexión número: " + contadorConexiones);
-            salida.print("Operaciones disponibles: \n1. CREAR <nombre_fichero>\n2. BAJAR <nombre_fichero>");
+            salida.println("Operaciones disponibles: 1. CREAR <nombre_fichero> 2. BAJAR <nombre_fichero>");
 
             String comando = entrada.readLine();
             if (comando != null) {
