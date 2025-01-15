@@ -1,8 +1,7 @@
-package Ejer4;
+package Ejer5;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.IOException;
 
 public class IOUtility {
 	public static void escribir(BufferedWriter bw,String msg)
@@ -16,13 +15,13 @@ public class IOUtility {
 	
 	
 	
-	public static String leer(BufferedReader br) throws IOException
+	public static String leer(BufferedReader br)
 	{
 		String mensaje ="";
-	
+		try {
 			mensaje = br.readLine();
 			System.out.println(mensaje);
-		
+		}catch(Exception e) {}
 		return mensaje;
 	}
 }
