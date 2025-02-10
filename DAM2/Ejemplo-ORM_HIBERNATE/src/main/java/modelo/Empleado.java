@@ -11,8 +11,12 @@ public class Empleado implements java.io.Serializable {
 
 	private String dni;
 	private String nomEmp;
-	private Set proyectos = new HashSet(0);
-	private Set proyectos_1 = new HashSet(0);
+	
+	//conjunto de proyectos en los que trabaja el empleado
+	private Set<Proyecto> proyectosTrabaja = new HashSet<>(0);
+	
+	//conjunto de proyectos que ese empleado dirige
+	private Set<Proyecto> proyectosJefe = new HashSet<>(0);
 
 	public Empleado() {
 	}
@@ -22,11 +26,11 @@ public class Empleado implements java.io.Serializable {
 		this.nomEmp = nomEmp;
 	}
 
-	public Empleado(String dni, String nomEmp, Set proyectos, Set proyectos_1) {
+	public Empleado(String dni, String nomEmp, Set<Proyecto> proyectos, Set<Proyecto> proyectosJefe) {
 		this.dni = dni;
 		this.nomEmp = nomEmp;
-		this.proyectos = proyectos;
-		this.proyectos_1 = proyectos_1;
+		this.proyectosTrabaja = proyectos;
+		this.proyectosJefe = proyectosJefe;
 	}
 
 	public String getDni() {
@@ -45,20 +49,20 @@ public class Empleado implements java.io.Serializable {
 		this.nomEmp = nomEmp;
 	}
 
-	public Set getProyectos() {
-		return this.proyectos;
+	public Set<Proyecto> getProyectosTrabaja() {
+		return this.proyectosTrabaja;
 	}
 
-	public void setProyectos(Set proyectos) {
-		this.proyectos = proyectos;
+	public void setProyectosTrabaja(Set<Proyecto> proyectosTrabaja) {
+		this.proyectosTrabaja = proyectosTrabaja;
 	}
 
-	public Set getProyectos_1() {
-		return this.proyectos_1;
+	public Set getProyectosJefe() {
+		return this.proyectosJefe;
 	}
 
-	public void setProyectos_1(Set proyectos_1) {
-		this.proyectos_1 = proyectos_1;
+	public void setProyectosJefe(Set<Proyecto> proyectosJefe) {
+		this.proyectosJefe = proyectosJefe;
 	}
 
 }

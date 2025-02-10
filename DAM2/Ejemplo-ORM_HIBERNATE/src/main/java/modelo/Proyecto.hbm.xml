@@ -6,7 +6,7 @@
             <column name="id_proy"/>
             <generator class="identity"/>
         </id>
-        <many-to-one class="modelo.Empleado" fetch="select" name="empleado">
+        <many-to-one class="modelo.Empleado" fetch="select" name="jefe">
             <column length="9" name="dni_jefe_proy" not-null="true"/>
         </many-to-one>
         <property name="nomProy" type="string">

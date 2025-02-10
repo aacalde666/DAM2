@@ -10,20 +10,20 @@ import java.util.Set;
 public class Proyecto implements java.io.Serializable {
 
 	private Integer idProy;
-	private Empleado empleado;
+	private Empleado jefe;
 	private String nomProy;
-	private Set empleados = new HashSet(0);
+	private Set<Empleado> empleados = new HashSet<>(0);
 
 	public Proyecto() {
 	}
 
-	public Proyecto(Empleado empleado, String nomProy) {
-		this.empleado = empleado;
+	public Proyecto(Empleado jefe, String nomProy) {
+		this.jefe = jefe;
 		this.nomProy = nomProy;
 	}
 
-	public Proyecto(Empleado empleado, String nomProy, Set empleados) {
-		this.empleado = empleado;
+	public Proyecto(Empleado jefe, String nomProy, Set<Empleado> empleados) {
+		this.jefe = jefe;
 		this.nomProy = nomProy;
 		this.empleados = empleados;
 	}
@@ -36,12 +36,12 @@ public class Proyecto implements java.io.Serializable {
 		this.idProy = idProy;
 	}
 
-	public Empleado getEmpleado() {
-		return this.empleado;
+	public Empleado getJefe() {
+		return this.jefe;
 	}
 
-	public void setEmpleado(Empleado empleado) {
-		this.empleado = empleado;
+	public void setJefe(Empleado jefe) {
+		this.jefe = jefe;
 	}
 
 	public String getNomProy() {
@@ -56,7 +56,7 @@ public class Proyecto implements java.io.Serializable {
 		return this.empleados;
 	}
 
-	public void setEmpleados(Set empleados) {
+	public void setEmpleados(Set<Empleado> empleados) {
 		this.empleados = empleados;
 	}
 

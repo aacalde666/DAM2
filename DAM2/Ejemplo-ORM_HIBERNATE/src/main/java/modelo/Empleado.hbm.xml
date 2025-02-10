@@ -9,7 +9,7 @@
         <property name="nomEmp" type="string">
             <column length="40" name="nom_emp" not-null="true"/>
         </property>
-        <set catalog="proyectos" fetch="select" inverse="false" lazy="true" name="proyectos" table="asig_proyecto">
+        <set catalog="proyectos" fetch="select" inverse="false" lazy="true" name="proyectosTrabaja" table="asig_proyecto">
             <key>
                 <column length="9" name="dni_emp" not-null="true"/>
             </key>
@@ -17,7 +17,7 @@
                 <column name="id_proy" not-null="true"/>
             </many-to-many>
         </set>
-        <set fetch="select" inverse="true" lazy="true" name="proyectos_1" table="proyecto">
+        <set fetch="select" inverse="true" lazy="true" name="proyectosJefe" table="proyecto">
             <key>
                 <column length="9" name="dni_jefe_proy" not-null="true"/>
             </key>
