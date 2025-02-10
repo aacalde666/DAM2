@@ -1,23 +1,26 @@
-package Ejer5conFIN;
+package cliente;
 
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
 
+import mensaje.Mensaje;
+
 public class Cliente {
     private final String SERVIDOR_IP = "localhost";
     private final int PUERTO = 12345;
     private Socket socket;
-    private BufferedReader entrada;
-    private PrintWriter salida;
+    private ObjectOutputStream oos;
+    private ObjectInputStream ois;
     private Scanner scanner;
     private RecibirMensajes recibirMensajes;
     private EnviarMensajes enviarMensajes;
+    private int numConexion = 0;
 
     public Cliente() throws IOException {
         this.socket = new Socket(SERVIDOR_IP, PUERTO);
-        this.entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        this.salida = new PrintWriter(socket.getOutputStream(), true);
+        this.oos = new ObjectOutputStream(socket.getOutputStream());
+        this.ois = new ObjectInputStream(socket.getInputStream());
         this.scanner = new Scanner(System.in);
         this.recibirMensajes = new RecibirMensajes();
         this.enviarMensajes = new EnviarMensajes();
@@ -31,9 +34,9 @@ public class Cliente {
         enviarMensajesThread.start();
 
         try {
+        	recibirMensajesThread.join();
+        	recibirMensajesThread.interrupt();
             enviarMensajesThread.join();
-            recibirMensajesThread.interrupt();
-            recibirMensajesThread.join();
         } catch (InterruptedException e) {
             System.err.println("Error al esperar a que los hilos terminen: " + e.getMessage());
         }
@@ -53,24 +56,31 @@ public class Cliente {
     private class RecibirMensajes implements Runnable {
         @Override
         public void run() {
-            try {
-                String mensaje;
-                while ((mensaje = entrada.readLine()) != null) {
-                    System.out.println(mensaje);
-                }
-            } catch (IOException e) {
-                System.err.println("Conexión con el servidor finalizada.");
-            }
+        	while (true) {
+	        	try {
+					Mensaje mensaje = (Mensaje) ois.readObject();
+					String respuestaString = (String) mensaje.getDatos();
+					
+					System.out.println(respuestaString);
+				} catch (ClassNotFoundException | IOException e) {
+					e.printStackTrace();
+				}
+			}
         }
     }
 
     private class EnviarMensajes implements Runnable {
         @Override
         public void run() {
-            String mensaje;
-			while ((mensaje = scanner.nextLine()) != null) {
-				Object m = mensaje;
-			    salida.println(m);
+        	while (true) {
+				int mensaje = scanner.nextInt();
+	        	Mensaje m = new Mensaje(numConexion++, mensaje);
+	        	try {
+					oos.writeObject(m);
+					oos.flush();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
         }
     }
